@@ -96,6 +96,8 @@ class DocxTemplate {
     _manager.updateArch();
     final enc = ZipEncoder();
 
-    return enc.encode(_manager.arch, level: DeflateLevel.defaultCompression);
+    return enc.encode(
+      _manager.arch,
+    );
   }
 }
